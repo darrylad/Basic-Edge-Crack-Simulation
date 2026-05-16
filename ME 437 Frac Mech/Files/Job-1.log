@@ -1,0 +1,19 @@
+Analysis initiated from SIMULIA established products
+Abaqus JOB Job-1
+Abaqus Learning Edition 2025
+Begin Analysis Input File Processor
+5/11/2026 12:50:03 AM
+Run pre.exe
+5/11/2026 12:50:06 AM
+End Analysis Input File Processor
+Begin Abaqus/Standard Analysis
+5/11/2026 12:50:06 AM
+Run standard.exe
+5/11/2026 12:50:10 AM
+End Abaqus/Standard Analysis
+Begin SIM Wrap-up
+5/11/2026 12:50:10 AM
+Run SMASimUtility.exe
+5/11/2026 12:50:10 AM
+End SIM Wrap-up
+Abaqus JOB Job-1 COMPLETED

@@ -1,0 +1,381 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].StaticStep(name='Step-1', previous='Initial')
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-0', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#2 ]', ), )), u1=0.000651435798832088, u2=0.000651435798832088, 
+    ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-1', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#4 ]', ), )), u1=6.90949144806409e-06, u2=0.00138186372606567, ur3=
+    UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-2', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#8 ]', ), )), u1=0.000651435798832088, u2=-0.000651435798832088, 
+    ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-3', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#20 ]', ), )), u1=6.90949144806409e-06, u2=-0.00138186372606567, 
+    ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-4', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#40 ]', ), )), u1=0.000460634670861845, u2=0.0, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-5', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#800000 ]', ), )), u1=0.000649038889455106, u2=0.000715654476511818
+    , ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-6', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#1000000 ]', ), )), u1=0.00064158687298679, u2=0.000780780248027131
+    , ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-7', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#2000000 ]', ), )), u1=0.000628754591122329, u2=
+    0.000846118384546163, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-8', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#4000000 ]', ), )), u1=0.000610311973125008, u2=
+    0.000910929350553555, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-9', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#8000000 ]', ), )), u1=0.00058613032999893, u2=0.000974443228965201
+    , ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-10', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#10000000 ]', ), )), u1=0.000556186191978578, u2=
+    0.00103587450702903, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-11', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#20000000 ]', ), )), u1=0.00052056317674594, u2=0.00109443761646689
+    , ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-12', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#40000000 ]', ), )), u1=0.000479451514164647, u2=0.0011493625260662
+    , ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-13', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#80000000 ]', ), )), u1=0.000433145347074727, u2=
+    0.00119990988572548, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-14', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0 #1 ]', ), )), u1=0.000382037765121023, u2=0.00124538591664396, 
+    ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-15', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0 #2 ]', ), )), u1=0.000326613951412852, u2=0.00128515638104051, 
+    ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-16', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0 #4 ]', ), )), u1=0.00026744216041069, u2=0.00131865903597377, 
+    ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-17', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0 #8 ]', ), )), u1=0.000205163033824184, u2=0.00134541543530662, 
+    ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-18', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0 #10 ]', ), )), u1=0.000140477441697987, u2=0.00136504015922454, 
+    ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-19', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0 #20 ]', ), )), u1=7.41329768287484e-05, u2=0.00137724876520158, 
+    ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-20', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:2 #80000 ]', ), )), u1=7.41329768287484e-05, u2=
+    -0.00137724876520158, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-21', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:2 #100000 ]', ), )), u1=0.000140477441697987, u2=
+    -0.00136504015922454, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-22', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:2 #200000 ]', ), )), u1=0.000205163033824184, u2=
+    -0.00134541543530662, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-23', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:2 #400000 ]', ), )), u1=0.00026744216041069, u2=
+    -0.00131865903597377, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-24', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:2 #800000 ]', ), )), u1=0.000326613951412852, u2=
+    -0.00128515638104051, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-25', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:2 #1000000 ]', ), )), u1=0.000382037765121023, u2=
+    -0.00124538591664396, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-26', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:2 #2000000 ]', ), )), u1=0.000433145347074727, u2=
+    -0.00119990988572548, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-27', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:2 #4000000 ]', ), )), u1=0.000479451514164647, u2=
+    -0.0011493625260662, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-28', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:2 #8000000 ]', ), )), u1=0.00052056317674594, u2=
+    -0.00109443761646689, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-29', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:2 #10000000 ]', ), )), u1=0.000556186191978578, u2=
+    -0.00103587450702903, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-30', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:2 #20000000 ]', ), )), u1=0.00058613032999893, u2=
+    -0.000974443228965201, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-31', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:2 #40000000 ]', ), )), u1=0.000610311973125008, u2=
+    -0.000910929350553555, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-32', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:2 #80000000 ]', ), )), u1=0.000628754591122329, u2=
+    -0.000846118384546163, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-33', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #1 ]', ), )), u1=0.00064158687298679, u2=-0.000780780248027131
+    , ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-34', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #2 ]', ), )), u1=0.000649038889455106, u2=
+    -0.000715654476511818, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-35', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #4 ]', ), )), u1=0.000649161536873492, u2=
+    -0.000588365717799496, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-36', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #8 ]', ), )), u1=0.000642683972507515, u2=
+    -0.000527437106229813, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-37', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #10 ]', ), )), u1=0.000632569428074105, u2=
+    -0.000469145467053669, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-38', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #20 ]', ), )), u1=0.000619438289217698, u2=
+    -0.00041389543551305, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-39', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #40 ]', ), )), u1=0.000603950438312781, u2=
+    -0.000361993962513099, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-40', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #80 ]', ), )), u1=0.000586790215812409, u2=
+    -0.000313645905902376, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-41', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #100 ]', ), )), u1=0.000568650666135805, u2=
+    -0.000268951725848493, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-42', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #200 ]', ), )), u1=0.000550217788035311, u2=
+    -0.000227907670063151, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-43', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #400 ]', ), )), u1=0.000532154993995825, u2=
+    -0.000190408109259721, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-44', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #800 ]', ), )), u1=0.000515088069084665, u2=
+    -0.000156250256714587, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-45', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #1000 ]', ), )), u1=0.000499591149848398, u2=
+    -0.000125141068010413, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-46', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #2000 ]', ), )), u1=0.000486173697246069, u2=
+    -9.67059593009363e-05, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-47', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #4000 ]', ), )), u1=0.000475269086438698, u2=
+    -7.04995067234413e-05, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-48', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #8000 ]', ), )), u1=0.000467224941235648, u2=
+    -4.60176398004018e-05, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-49', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #10000 ]', ), )), u1=0.000462295222198187, u2=
+    -2.27111092554971e-05, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-50', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #20000 ]', ), )), u1=0.000462295222198187, u2=
+    2.27111092554971e-05, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-51', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #40000 ]', ), )), u1=0.000467224941235648, u2=
+    4.60176398004018e-05, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-52', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #80000 ]', ), )), u1=0.000475269086438698, u2=
+    7.04995067234413e-05, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-53', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #100000 ]', ), )), u1=0.000486173697246069, u2=
+    9.67059593009363e-05, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-54', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #200000 ]', ), )), u1=0.000499591149848398, u2=
+    0.000125141068010413, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-55', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #400000 ]', ), )), u1=0.000515088069084665, u2=
+    0.000156250256714587, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-56', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #800000 ]', ), )), u1=0.000532154993995825, u2=
+    0.000190408109259721, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-57', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #1000000 ]', ), )), u1=0.000550217788035311, u2=
+    0.000227907670063151, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-58', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #2000000 ]', ), )), u1=0.000568650666135805, u2=
+    0.000268951725848493, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-59', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #4000000 ]', ), )), u1=0.000586790215812409, u2=
+    0.000313645905902376, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-60', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #8000000 ]', ), )), u1=0.000603950438312781, u2=
+    0.000361993962513099, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-61', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #10000000 ]', ), )), u1=0.000619438289217698, u2=
+    0.00041389543551305, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-62', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #20000000 ]', ), )), u1=0.000632569428074105, u2=
+    0.000469145467053669, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-63', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #40000000 ]', ), )), u1=0.000642683972507515, u2=
+    0.000527437106229813, ur3=UNSET)
+mdb.models['Model-1'].DisplacementBC(createStepName='Step-1', name='BC-64', 
+    region=Region(
+    nodes=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:3 #80000000 ]', ), )), u1=0.000649161536873492, u2=
+    0.000588365717799496, ur3=UNSET)
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, name=
+    'Job-1', nodalOutputPrecision=SINGLE, queue=None, resultsFormat=ODB, 
+    scratch='', type=ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.models['Model-1'].StaticStep(initialInc=0.1, maxNumInc=1000, name='Step-2', 
+    previous='Step-1')
+del mdb.models['Model-1'].steps['Step-2']
+mdb.models['Model-1'].steps['Step-1'].setValues(maxNumInc=1000)
+mdb.jobs['Job-1'].submit(consistencyChecking=OFF)
+mdb.jobs['Job-1']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'jobName': 'Job-1', 'clientHost': 'DESKTOP-U4IHQVR', 'handle': 0})
+mdb.jobs['Job-1']._Message(ODB_FILE, {
+    'file': 'D:\\Documents\\Frac Mech\\Job-1.odb', 'phase': BATCHPRE_PHASE, 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(COMPLETED, {'message': 'Analysis phase complete', 
+    'phase': BATCHPRE_PHASE, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'jobName': 'Job-1', 'clientHost': 'DESKTOP-U4IHQVR', 'handle': 17616})
+mdb.jobs['Job-1']._Message(STEP, {'stepId': 1, 'phase': STANDARD_PHASE, 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ODB_FRAME, {'step': 0, 'frame': 0, 
+    'phase': STANDARD_PHASE, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(MEMORY_ESTIMATE, {'memory': 25.0, 
+    'phase': STANDARD_PHASE, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(PHYSICAL_MEMORY, {'physical_memory': 16168.0, 
+    'phase': STANDARD_PHASE, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(MINIMUM_MEMORY, {'minimum_memory': 17.0, 
+    'phase': STANDARD_PHASE, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ODB_FRAME, {'step': 0, 'frame': 1, 
+    'phase': STANDARD_PHASE, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(STATUS, {'step': 1, 'increment': 1, 'attempts': 1, 
+    'severe': 0, 'equilibrium': 1, 'iterations': 1, 'totalTime': 1.0, 
+    'stepTime': 1.0, 'timeIncrement': 1.0, 'phase': STANDARD_PHASE, 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(END_STEP, {'stepId': 1, 'phase': STANDARD_PHASE, 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(COMPLETED, {'message': 'Analysis phase complete', 
+    'phase': STANDARD_PHASE, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(JOB_COMPLETED, {'time': 'Mon May 11 00:50:10 2026', 
+    'jobName': 'Job-1'})
+#* KeyError: Unknown key Node_Set-2

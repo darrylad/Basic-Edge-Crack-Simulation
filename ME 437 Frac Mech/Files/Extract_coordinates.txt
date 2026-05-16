@@ -1,0 +1,21 @@
+# Define output file path
+output_file = r'D:\Documents\Frac Mech\extracted_coordinates.csv'
+
+# Open the file and write the data
+with open(output_file, 'w') as f:
+    
+    # Header row for Excel
+    f.write('Node_ID, X, Y, Z\n')
+    
+    # Get nodes from your assembly set
+    nodes = mdb.models['Model-1'].rootAssembly.sets['Set-1'].nodes
+    
+    for n in nodes:
+        f.write('%d, %f, %f, %f\n' % (
+            n.label,
+            n.coordinates[0],
+            n.coordinates[1],
+            n.coordinates[2]
+        ))
+
+print("Success! File saved at: " + output_file)
