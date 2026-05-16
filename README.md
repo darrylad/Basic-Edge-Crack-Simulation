@@ -1,4 +1,4 @@
-# Basic Edge Crack Simulation Using Abaqus CAE Student
+# Basic Edge Crack Simulation Using Abaqus CAE
 
 This mini project is a part of the final semester (Sem 8) course ME 437, IIT Indore.
 
